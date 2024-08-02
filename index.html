@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task Tracker</title>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Task Tracker</h1>
+    </div>
+
+    <main>
+
+        <form id="taskForm">
+
+            <input type="text" id="addTask" placeholder="Enter Task Details" required>
+
+            <input type="date" name="date" id="date" requied>
+
+            <button type="submit">submit</button>
+
+        </form>
+
+        <hr>
+
+        <div class="tasks">
+
+            <h4 class="tasks-heading">Your Tasks</h4>
+
+            <div class="tasks-filter">
+                <h4>Filter By:</h4>
+                <select name="days" id="days">
+                    <option value="all">All</option>
+                    <option value="today">Today</option>
+                    <option value="10">Last 10 days</option>
+                    <option value="15">Last 15 days</option>
+                    <option value="30">Last 30 days</option>
+                    
+                </select>
+            </div>
+
+
+        </div>
+
+    </main>
+
+        <div id="task-section"  >
+
+            <!-- <div class="cards">
+
+                <div class="task-heading">
+                    <h3 >Task1</h3>
+                    <p>17 August 2024</p>
+                </div>
+
+                <div class="task-buttons">
+                    <button type="button" id="update">Update</button>
+                    <button type="button" id="delete">Delete</button>
+
+                </div>
+
+            </div> -->
+
+
+
+        </div>
+
+   
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
